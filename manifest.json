@@ -1,16 +1,22 @@
 {
-    "name" : "AMS Halcyon",
-    "short_name" : "AMS Halcyon",
-    "description" : "Aplikasi AMS Halcyon",
+    "name" : "Chelsea News",
+    "short_name" : "Chelsea News",
+    "description" : "Chelsea News App",
     "start_url" : "/index.html",
     "display" : "standalone",
-    "background_color" : "#00897B",
-    "theme_color" : "#00897B",
+    "background_color" : "#2EA0EC",
+    "theme_color" : "#2EA0EC",
+    "gcm_sender_id": "435161968191",
     "icons" : [
         {
-            "src" : "icon.png",
-            "sizes" : "512x512",
-            "type" : "image/png"
-        }
+            "src": "/img/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        } 
     ]
 }
