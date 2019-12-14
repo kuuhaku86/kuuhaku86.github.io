@@ -30,43 +30,6 @@ workbox.routing.registerRoute(
         cacheName: 'api-football-data',
     })
 );
-// self.addEventListener("fetch",function(e) {
-//     const base_url = "https://api.football-data.org/v2/";
-//     if(e.request.url.indexOf(base_url) > -1) {
-//         e.respondWith(
-//             caches.open(CACHE_NAME).then(function(cache) {
-//                 return fetch(e.request)
-//                     .then(function(response) {
-//                         cache.put(e.request.url, response.clone());
-//                         return response;
-//                     })
-//             })
-//         );
-//     }else{
-//         e.respondWith(
-//             caches.match(e.request, {
-//                     ignoreSearch: true,
-//             }).then(function(response) {
-//                 return response || fetch(e.request);
-//             })
-//         )
-//     }
-// });
-
-// self.addEventListener("activate", function(e) {
-//     e.waitUntil(
-//         caches.keys().then(function(cacheNames) {
-//             return Promise.all(
-//                 cacheNames.map(function(cacheName) {
-//                     if(cacheName != CACHE_NAME) {
-//                         console.log(("ServiceWorker : cache " + cacheName + " dihapus"));
-//                         return caches.delete(cacheName);
-//                     }
-//                 })
-//             );
-//         })
-//     );
-// });
 
 self.addEventListener('push', function(e) {
     var body;
