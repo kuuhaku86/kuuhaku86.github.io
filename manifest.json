@@ -1,0 +1,15 @@
+{
+  "name": "Yohan Ardiansyah",
+  "short_name": "Portfolio",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#6b63ff",
+  "theme_color": "#6b63ff",
+  "icons": [
+    {
+      "src": "/favicon/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
